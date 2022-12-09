@@ -1,7 +1,9 @@
+/* playground */
 
 .playground {
     position: relative;
 z-index: -1;
+display: none;
 
     
   }
@@ -29,6 +31,8 @@ margin-left: auto;
      
   }
 
+  
+/* punkte */
 .punkte{
 background-color: white;
 z-index: 5;
@@ -81,4 +85,41 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
 
+
+
+
+
+/* start screen */
+
+#StartScreen {
+width: auto;
+height: 1080px;
+
+background-image: url(bilder/start-02.png);
+background-size: contain;
+}
+
+#butstart {
+  color: black;
+  margin-left: 50%;
+  text-align: center;
+  
+  
+  position: absolute;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+   }
+
+
+/* gameover */
+#gameover {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* produced by */
+#tam {
+  color: white;
+ 
+}
 

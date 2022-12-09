@@ -9,11 +9,25 @@
 </head>
 <body>
 
-<p class="punkte">0</p>
 
 
 
-<div class="playground">
+  <!-- startscreen -->
+
+<div id="StartScreen">
+
+    <p id="tam">©2022 developed by Tamara</p>
+    <button id="butstart">Start</button>
+
+  </div>
+
+
+
+
+
+<!-- Playground -->
+
+<div id="playground">
     <img src="bilder/background.png" width="100%" height="100%" alt="korb">
     <div class="korb">
         <img src="bilder/korb-04-04.png" width="21%" height="21%" alt=""> </div>
@@ -23,15 +37,28 @@
     </div>
 
     <script src="https://jsgame.bbz.cloud/scripts/v1/timer.js"></script>
-</div>
 
+   <!-- score -->
+    <p class="punkte">0</p>
 
- <section>
+   <!-- timer -->
+  <section>
       <div class="container">
         <h1>00:00</h1>
       </div>
-    </section>
+   </section>
 
+</div>
+
+  <!-- Game Over Screen -->
+
+  <div id="gameover" style="display: none">
+
+    <h1>GAME OVER</h1>
+
+    <a id="butrestart" href="#">Restart</a>
+
+  </div>
   
 <script src="https://jsgame.bbz.cloud/scripts/v1/collision.js"></script>
 <script src="https://jsgame.bbz.cloud/scripts/v1/keyboard.js"></script>

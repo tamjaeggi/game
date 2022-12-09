@@ -3,7 +3,8 @@ var punkteAnzeige = document.querySelector('.punkte')
 var score = 0
 let timeSecond = 60;
 const timeH = document.querySelector("h1");
-var treffer = document.querySelector('.treffer')  
+var treffer = document.querySelector('.treffer')
+
 
 
 spieler.style.left = '45%'
@@ -54,7 +55,7 @@ function loop() {
       spieler.style.top = parseInt(spieler.style.top) - 100 + 'px'
     }
 
-   
+  if(cl)
 
 if(anyCollision(spieler, [treffer])) {
   
@@ -67,6 +68,19 @@ if(anyCollision(spieler, [treffer])) {
 }
 
 
-  window.requestAnimationFrame(loop)
+if (onclick(button, sacke)) {
+  playEatEnemy();
+
+
+const button = document.getElementById('butstart').onclick = handleClick();
+function handleClick() {
+  document.getElementById("StartScreen").style.display = 'none';
+  document.getElementById("playground").style.display = 'unset';  
+  // gameover.style.display = "unset";
+  // StartScreen.style.display = "none";
+  };
+
+window.requestAnimationFrame(loop)
 }
 window.requestAnimationFrame(loop)
+}
